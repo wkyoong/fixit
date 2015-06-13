@@ -1,0 +1,20 @@
+ <ons-navigator title="Navigator" var="homeNavigator">
+
+<ons-toolbar>
+    <div class="center">Explore</div>
+    <div class="right">
+            <ons-toolbar-button>
+              <ons-icon icon="fa-pencil-square-o" id="addNote" onclick="homeNavigator.pushPage('addpost.html',addpostfn)" fixed-width="false" style="vertical-align: -4px;"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+          <div class="left">
+            <ons-toolbar-button>
+              <ons-icon icon="fa-refresh" id="addNote" onclick="querypost()" fixed-width="false" style="vertical-align: -4px;"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+</ons-toolbar>
+<ons-page>
+    
+<div id="home-feed"></div>
+</ons-page>
+</ons-navigator>
