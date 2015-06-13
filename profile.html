@@ -1,0 +1,106 @@
+<ons-navigator title="Navigator" var="profileNavigator">
+
+      <ons-page modifier="shop-details">
+     <ons-toolbar>
+    <div class="center">My Profile</div>
+    <div class="right">
+            <ons-toolbar-button>
+              <ons-icon icon="gear" onclick="profileNavigator.pushPage('profile_settings.html')" fixed-width="false" style="vertical-align: -4px;"></ons-icon>
+            </ons-toolbar-button>
+          </div>
+</ons-toolbar>
+
+ <a onclick="profileNavigator.pushPage('profile_updateprofilepic.html')"><div id="profile_pic" class="card">
+ </div></a>
+          <!--<div class="card-name">Onsen Sushi</div>
+          <div class="card-desc">Traditional Japanese Sushi<br>Open until 10:30pm</div>
+            -->
+        
+
+
+        <div class="rating"><div class="rating-num">
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+            <ons-icon icon="fa-star-half" fixed-width="false"></ons-icon>
+            4.5
+        </div></div>
+
+        <ons-list style="border-top: none"><ons-list-item style="line-height: 1; padding: 0;">
+          <ons-row class="action">
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-ios7-star-half"></ons-icon></div>
+              <div class="action-label">Rate</div>
+            </ons-col>
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-bookmark"></ons-icon></div>
+              <div class="action-label">Favorite</div>
+            </ons-col>
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-share"></ons-icon></div>
+              <div class="action-label">Share</div>
+            </ons-col>
+
+            <ons-col class="action-col">
+              <div class="action-icon"><ons-icon icon="ion-compose"></ons-icon></div>
+              <div class="action-label">Check In</div>
+            </ons-col>
+
+          </ons-row>
+        </ons-list-item></ons-list>
+
+        <ons-list style="margin-top: 12px;">
+          <ons-list-item modifier="chevron" onclick="profileNavigator.pushPage('profile_updater.html',setprofileupdater('displayname'))">
+          <div class="prop-desc">
+            <ons-row>
+                 <ons-col width="30%">Username</ons-col>
+             <ons-col><span id="profile_displayname"></span></ons-col>
+            </ons-row>
+            </div>
+          </ons-list-item>
+          
+          <ons-list-item modifier="chevron" onclick="profileNavigator.pushPage('profile_updater.html',setprofileupdater('email'))">
+          <div class="prop-desc">
+            <ons-row>
+                 <ons-col width="30%">Email</ons-col>
+             <ons-col><span id="profile_email"></span></ons-col>
+            </ons-row>
+            </div>
+          </ons-list-item>
+          
+          <ons-list-item modifier="chevron" onclick="profileNavigator.pushPage('map.html',launchmap)">
+            <div class="prop-desc">
+            <ons-row>
+                 <ons-col width="30%">Location</ons-col>
+             <ons-col id="profile_location"></ons-col>
+            </ons-row>
+            </div>
+          </ons-list-item>
+          
+                    
+          <ons-list-item modifier="chevron" onclick="profileNavigator.pushPage('profile_updater.html',setprofileupdater('phone'))">
+            <div class="prop-desc">
+            <ons-row>
+                 <ons-col width="30%">Telephone</ons-col>
+             <ons-col><span id="profile_phone"></span></ons-col>
+            </ons-row>
+            </div>
+          </ons-list-item>
+<!--
+          <ons-list-item modifier="chevron">
+            <div class="prop-desc">
+              <ons-icon icon="fa-mobile"></ons-icon>
+              (111) 123-4567
+            </div>
+          </ons-list-item>
+        </ons-list>
+-->
+
+
+      </ons-page>
+    
+    </ons-navigator>
