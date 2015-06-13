@@ -1,5 +1,9 @@
 /* This is a CSS file */
 
+html,body{
+height:100%;
+}
+
 #get_user_id{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -22,6 +26,7 @@ input[type="search"] {
 }
 
 #map{z-index:0;};
+.map{min-height:100%};
 #locate{z-index:9;};
 .panela{position:absolute;z-index:9;bottom:15px;left:15px;};
 #marker {
@@ -316,4 +321,74 @@ margin-right:5px;
     -o-animation-iteration-count: infinite;
 }
 
+.floatleft{
+    float:left;
+}
+
+.profile_icon{
+    padding-top:10px;   
+}
+
+.black{
+    color:black;
+}
+
+.project_list{
+      margin-top:10px;
+      display:none;
+      }
+      
+      /* Grids */
+      
+      
+ul.rig {
+    list-style: none;
+	font-size: 0px;
+	margin: 0px; /* should match li left margin */
+    padding:0px;
+}
+ul.rig li {
+	display: inline-block;
+	/*padding: 10px;*/
+	margin: 0px;
+	background: #fff;
+	/*border: 1px solid #ddd;*/
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	/*box-shadow: 0 0 5px #ddd;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;*/
+}
+ul.rig li img {
+	max-width: 100%;
+	height: auto;
+	margin: 0px;
+}
+ 
+/* class for 3 columns */
+ul.rig li {
+	width: 33.3%;
+} 
+
+#three-columns{
+width:100%;    
+}
+
+.projectimg{
+    min-height100%;
+    /*min-width:100%;*/
+}
+
+/* RED COLOUR PALATTE */
+.navigation-bar {background-color: #ff350d;}
+.navigation-bar__title {color: #FFF;}
+.tab-bar {background-color: #ff350d;}
+.ons-icon {color: #FFF;}
+.ons-icon:active {color: #000;}
+.button--large{background-color: #ff350d;}
+
+.tab-bar__icon + .tab-bar__label {color: #FFF;}
+.tab-bar__button:active, :checked + .tab-bar__button {background-color: #CA3622;}
 
