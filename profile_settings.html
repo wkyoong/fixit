@@ -1,0 +1,45 @@
+<ons-page>
+<ons-toolbar>
+    <div class="center">Settings</div>
+    <div class="right"><ons-toolbar-button ng-click="ons.navigator.popPage()">Cancel</ons-toolbar-button></div>
+</ons-toolbar>
+
+      <!--<img id="get_user_id" src="" class="profile-image">-->
+      <br>
+
+      <ons-list modifier="inset" class="settings-list">
+      <ons-list-item id="get_user">
+          
+        </ons-list-item>
+        <ons-list-item id="get_user_email">
+          
+        </ons-list-item>
+        </ons-list>
+        <br>
+        
+     
+        <ons-list modifier="inset" class="settings-list">
+        
+        <ons-list-item modifier="chevron" onclick="settingsNavigator.pushPage('map.html',launchmap)" >
+          <ons-icon icon="map-marker" style="opacity: 0.8"></ons-icon>
+          Set Location
+        </ons-list-item>
+        <ons-list-item modifier="tappable">
+          <label class="checkbox checkbox--list-item">
+            <input id="serviceprovidercheck" type="checkbox" onclick="parse_serviceprovider()">
+            <div class="checkbox__checkmark checkbox--list-item__checkmark"></div>
+            Service Provider 
+          </label>
+        </ons-list-item>
+      </ons-list>
+
+      <br>
+
+      <ons-list modifier="inset" class="settings-list">
+        <ons-list-item modifier="tappable" onclick="settingsNavigator.pushPage('navigator.html',logoutfn())">
+          <ons-icon icon="ion-log-out" style="opacity: 0.8"></ons-icon>
+          Sign out
+        </ons-list-item>
+      </ons-list>
+</ons-page>
+
