@@ -1,0 +1,30 @@
+ <ons-page>
+      <ons-toolbar>
+        <div class="right"><ons-toolbar-button ng-click="ons.navigator.popPage()">Cancel</ons-toolbar-button></div>
+        <div class="center">Update Picture</div>
+      </ons-toolbar>
+
+<div style="padding: 10px 9px">
+        <ons-button id="saveProfilePicBtn" onclick="saveProfilePic()" modifier="large" style="margin: 0 auto;">
+          Update Picture
+        </ons-button>
+      </div>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        <ons-list-item class="to-wrapper">
+          <div style="width:100%"><img style="width:100%;left:0px" id="largeImage" src="img/userholder.png" />
+              
+              
+          </div>
+        </ons-list-item>
+
+        <ons-list-item>
+            <ons-icon icon="fa-camera" onclick="capturePhotoEdit();" style="opacity:0.2"></ons-icon>&nbsp&nbsp
+          <ons-icon icon="fa-photo" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);" style="opacity:0.2"></ons-icon>&nbsp&nbsp
+          <ons-icon icon="fa-ban" onclick="onProfilePhotoReset();" style="opacity:0.2"></ons-icon>
+        </ons-list-item>
+
+      </ons-list>
+      
+       </ons-page>
+      
