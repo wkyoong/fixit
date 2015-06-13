@@ -1,0 +1,35 @@
+ <ons-page>
+      <ons-toolbar>
+        <div class="right"><ons-toolbar-button ng-click="ons.navigator.popPage()">Cancel</ons-toolbar-button></div>
+        <div class="center">Add New Project</div>
+      </ons-toolbar>
+
+      <ons-list modifier="inset" style="margin-top: 10px">
+        
+            <ons-list-item class="to-wrapper">
+                <textarea id="project_title" class="textarea textarea--transparent" placeholder="Project/Work Title" value="Project 1" style="width: 100%; height: 50px;"></textarea>
+            </ons-list-item>
+        
+            <ons-list-item>
+                <textarea id="project_desc" class="textarea textarea--transparent" placeholder="Description" value="Project 1 Description" style="width: 100%; height: 100px;"></textarea>
+            </ons-list-item>
+        
+        
+      </ons-list>
+
+      <div style="padding: 10px 9px">
+        <ons-button id="createNewProjectBtn" onclick="createNewProject()" modifier="large" style="margin: 0 auto;">
+          Create New Project
+        </ons-button>
+      </div>
+      
+    <!--<button onclick="capturePhoto();">Capture Photo</button> <br>-->
+    <!--<ons-button onclick="capturePhotoEdit();">Capture Editable Photo</ons-button> <br>-->
+    <!--<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>-->
+    <!--<ons-button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</ons-button><br>-->
+    <!--<ons-button onclick="onPhotoReset();">Reset</ons-button> <br>-->
+
+    
+      
+       </ons-page>
+      
