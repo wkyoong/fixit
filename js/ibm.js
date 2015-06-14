@@ -1,8 +1,8 @@
 // This is a JavaScript file
 
 var API_URL = "https://gateway.watsonplatform.net/visual-recognition-beta/api";
-var API_USER = "58c50654-b281-4566-b2cf-a1f63c126d7b";
-var API_PASSWORD = "DAX8djrBfJRk";
+var API_USER = /*"INSERT CREDENTIALS";*/
+var API_PASSWORD = /*"INSERT CREDENTIALS";*/;
 
     function uploadWin(res) {
         var data = JSON.parse(res.response);
